@@ -1,0 +1,6 @@
+_results_
+allure-report
+allure-results
+node_modules
+Screensnaps
+shop.e2e.js
