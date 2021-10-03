@@ -9,8 +9,6 @@ class ShopPage extends Page {
      */
     linkProductName (linkname) { return $('='+linkname) }
 
-   //get inputPassword () { return $('#password') }
-   //get btnSubmit () { return $('button[type="submit"]') }
 }
 
 module.exports = new ShopPage();

@@ -71,8 +71,11 @@ describe('Add products to Cart-shop2', async () => {
         console.log(`Cost of added items to cart: ${total_cost_cart} , and the cart shows subtotal as ${cart_stat[0]}. These two should match!`);
         expect(total_cost_cart).toHaveValue(cart_stat[0]);
 
-        browser.pause(8000);
-        await CartPage.link_proceed_checkout.click();
+        //browser.pause(8000);
+        var proceed_to_checkout= await CartPage.link_proceed_checkout;
+        await proceed_to_checkout.waitForClickable({ timeout: 8000 });
+        await proceed_to_checkout.click();
+        //await CartPage.link_proceed_checkout.click();
         
        
         var check_out_invoice = await CheckOut.review_cart();  //return [ct_subtotal,ct_flat_rate,ct_tax,ct_total,calculated_total];
