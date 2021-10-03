@@ -66,20 +66,36 @@ few key concepts covered for Webdriver.io
 
 ## remote Machine - ubuntu 
 Install nodejs → sudo apt install nodejs
+
 install npm - sudo apt intall npm
+
 instal git --> sudo apt install git-all
+
 configure git - git config user.name 'simpleappdesigner'
+
 email : git config --global user.email "simpleappdesigner.gmail.com"
+
 mkdir WebdriverioECom && cd WebdriverioECom
+
 git init
+
 git clone https://github.com/simpleappdesigner/webdriverioCheckOut.git
+
 npm install ( this will install dependencies listed in package.json
+
 mkdir Screensnaps → this is needed to save screen snaps
+
 install allure -- > sudo npm install -g allure-commandline
+
 install java and set JAVA_HOME or JAVA is in path. This is needed for running allure report.
+
 sudo apt install default-jre
+
 which java→ to get the path
+
 npx wdio -l error
+
 allure generate allure-results --clean && allure open 
+
 
 
